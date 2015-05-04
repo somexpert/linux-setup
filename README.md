@@ -6,7 +6,7 @@ To-Do:
 	Create dot files for bash aliases
 	Create file that will install programs
 	Create file that will download listed documents
-	Create setup files for Chrome, Git, and Sublime
+	Create setup files for Chrome, Git, Sublime, and Tmux
 	Create file to customize my command prompt.
 
 Things to install if not there already:
@@ -19,6 +19,8 @@ Things to install if not there already:
 	Sublime
 	Vimux
 	Vundle (or some other manager)
+	adb
+	fastboot
 
 Documents I want downloaded:
 	Pro Git
