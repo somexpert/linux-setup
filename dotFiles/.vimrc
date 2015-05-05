@@ -1,13 +1,30 @@
 " Set up vim
+
+" Set VI compatibility off. Allows full VIM feature set.
 set nocompatible
+
+" Show line numbers
 set number
+
+" Show prompt to save if you try exiting a modified buffer before saving
 set confirm
+
+" The following eliminate tabs altogether in favor of 4 spaces
 set expandtab
-set loadplugins
-set ruler
 set shiftwidth=4
-set showmode
 set tabstop=4
+set softtabstop=4
+
+" Sets the bottom right status line to show mode and position info
+set ruler
+set showmode
+
+" Sets the timout len for key combos such as remaps and key combos
 set timeout
 set timeoutlen=1000
-inoremap jj <Esc> 
+
+" Sets certain remaps
+inoremap jj <Esc>
+
+" Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
+set loadplugins
