@@ -15,9 +15,11 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
-" Sets the bottom right status line to show mode and position info
+" Sets the bottom right status line to show mode, position, and commands
+set laststatus=2
 set ruler
 set showmode
+set showcmd
 
 " Sets the timout len for key combos such as remaps and key combos
 set timeout
