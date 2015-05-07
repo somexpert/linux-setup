@@ -8,6 +8,11 @@ To-Do:
 	Create file that will download listed documents
 	Create setup files for Chrome, Git, Sublime, and Tmux
 	Create file to customize my command prompt.
+	Get virtualenv
+	Get django
+	Get MySQL
+	Get SQLite
+	Get pip and easy_install
 
 Things to install if not there already:
 	Chrome
