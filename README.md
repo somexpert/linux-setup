@@ -31,3 +31,15 @@ Documents I want downloaded:
 	Pro Git
 	Vim Book
 	1 or 2 Python Books
+
+The following directories and links are created with this script:
+	~/Projects
+
+The following aliases are added:
+	
+
+The following programs are installed:
+
+The following dotfiles are added:
+
+
