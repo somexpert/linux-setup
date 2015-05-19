@@ -35,11 +35,13 @@ Documents I want downloaded:
 The following directories and links are created with this script:
 	~/Projects
 
-The following aliases are added:
-	
+The following aliases are added:	
 
 The following programs are installed:
 
 The following dotfiles are added:
-
-
+    ~/.bash_profile
+    ~/.bashrc
+    ~/.bash_aliases
+    ~/.vimrc
+    ~/.tmux.conf
