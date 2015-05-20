@@ -26,6 +26,7 @@ Things to install if not there already:
 	Vundle (or some other manager)
 	adb
 	fastboot
+    tree
 
 Documents I want downloaded:
 	Pro Git
@@ -45,3 +46,4 @@ The following dotfiles are added:
     ~/.bash_aliases
     ~/.vimrc
     ~/.tmux.conf
+    ~/.gitconfig

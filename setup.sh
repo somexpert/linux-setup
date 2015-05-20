@@ -11,6 +11,7 @@ cp dotFiles/.bashrc ~/.bashrc
 cp dotFiles/.bash_aliases ~/.bash_aliases
 cp dotFiles/.vimrc ~/.vimrc
 cp dotFiles/.tmux.conf ~/.tmux.conf
+cp dotFiles/.gitconfig ~/.gitconfig
 
 # Setup desired directories
 echo "Creating directories and links."
