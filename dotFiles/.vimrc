@@ -3,8 +3,8 @@
 " Set VI compatibility off. Allows full VIM feature set.
 set nocompatible
 
-" Show line numbers
-set number
+" Show relative line numbers
+set relativenumber
 
 " Show prompt to save if you try exiting a modified buffer before saving
 set confirm
