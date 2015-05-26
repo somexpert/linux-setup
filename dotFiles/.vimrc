@@ -11,13 +11,21 @@ set confirm
 
 " Set vim to use syntax highlighting as well as automatic indentation
 syntax on
-filetype indent plugin on
+
+" Limit line length to 79 chars before inserting a newline char
+set textwidth=79
 
 " The following eliminate tabs altogether in favor of 4 spaces
 set expandtab
 set shiftwidth=4
-set tabstop=8
+set tabstop=4
 set softtabstop=4
+
+" Make all indent commands ('>>' or '<<') a multiple of shiftwidth
+set shiftround
+
+" Indent next line to same indent as last line
+set autoindent
 
 " Sets the bottom right status line to show mode, position, and commands
 set laststatus=2
