@@ -9,10 +9,14 @@ set relativenumber
 " Show prompt to save if you try exiting a modified buffer before saving
 set confirm
 
+" Set vim to use syntax highlighting as well as automatic indentation
+syntax on
+filetype indent plugin on
+
 " The following eliminate tabs altogether in favor of 4 spaces
 set expandtab
 set shiftwidth=4
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 
 " Sets the bottom right status line to show mode, position, and commands
