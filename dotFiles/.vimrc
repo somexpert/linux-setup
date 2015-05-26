@@ -3,8 +3,9 @@
 " Set VI compatibility off. Allows full VIM feature set.
 set nocompatible
 
-" Show relative line numbers
+" Show relative line numbers and absolute line number for current line
 set relativenumber
+set number
 
 " Show prompt to save if you try exiting a modified buffer before saving
 set confirm
