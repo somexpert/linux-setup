@@ -6,7 +6,6 @@ alias ll='ls -l --color'
 alias ls='ls --color'
 alias rm='rm -I --preserve-root -d -v'
 alias venv='virtualenvwrapper'
-alias venvstart='source /usr/local/bin/virtualenvwrapper.sh;
-			 export WORKON_HOME=~/Projects'
+alias venvstart='export WORKON_HOME=~/Projects ; source /usr/local/bin/virtualenvwrapper.sh'
 alias lsvenv='lsvirtualenv'
 alias cdvenv='cdvirtualenv'
