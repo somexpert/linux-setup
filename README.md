@@ -4,8 +4,8 @@ Scripts for making sure my new Linux environments have everything I need and exp
 
 To-Do:
 
-- [ ] Create dot files for bash aliases
-- [ ] Create file that will install programs
+- [x] Create dot files for bash aliases
+- [x] Create file that will install programs
 - [ ] Create file that will download listed documents
 - [ ] Create setup files for Chrome, Git, Sublime, and Tmux
 - [ ] Create file to customize my command prompt.

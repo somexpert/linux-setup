@@ -16,3 +16,8 @@ cp dotFiles/.gitconfig ~/.gitconfig
 # Setup desired directories
 echo "Creating directories and links."
 mkdir ~/Projects
+
+# Install desired programs, extensions, etc.
+su
+exit
+
