@@ -3,16 +3,18 @@ Scripts for making sure my new Linux environments have everything I need and exp
 
 
 To-Do:
-	Create dot files for bash aliases
-	Create file that will install programs
-	Create file that will download listed documents
-	Create setup files for Chrome, Git, Sublime, and Tmux
-	Create file to customize my command prompt.
-	Get virtualenv
-	Get django
-	Get MySQL
-	Get SQLite
-	Get pip and easy_install
+[] Create dot files for bash aliases
+[] Create file that will install programs
+[] Create file that will download listed documents
+[] Create setup files for Chrome, Git, Sublime, and Tmux
+[] Create file to customize my command prompt.
+[] Get virtualenv
+[] Get django
+[] Get MySQL
+[] Get SQLite
+[] Get pip
+[] Get lxml
+[] Get Atom text editor
 
 Things to install if not there already:
 	Chrome
@@ -27,6 +29,8 @@ Things to install if not there already:
 	adb
 	fastboot
     tree
+    Atom editor
+    lxml
 
 Documents I want downloaded:
 	Pro Git
