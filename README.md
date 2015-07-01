@@ -15,6 +15,7 @@ To-Do:
 [] Get pip
 [] Get lxml
 [] Get Atom text editor
+[] Get Pandoc
 
 Things to install if not there already:
 	Chrome
@@ -31,6 +32,7 @@ Things to install if not there already:
     tree
     Atom editor
     lxml
+    Pandoc
 
 Documents I want downloaded:
 	Pro Git
