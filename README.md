@@ -1,8 +1,5 @@
-# linux-setup
-Scripts for making sure my new Linux environments have everything I need and expect.
-
-
 To-Do:
+======
 
 - [x] Create dot files for bash aliases
 - [x] Create file that will install programs
@@ -17,6 +14,7 @@ To-Do:
 - [ ] Get lxml
 - [ ] Get Atom text editor
 - [ ] Get Pandoc
+- [ ] Separate vim settings by file type
 
 Things to install if not there already:
 	Chrome
@@ -40,17 +38,33 @@ Documents I want downloaded:
 	Vim Book
 	1 or 2 Python Books
 
-The following directories and links are created with this script:
-	~/Projects
+Added/Changed
+=============
 
-The following aliases are added:
+Directories
+-----------
 
-The following programs are installed:
+``~/Projects``
 
-The following dotfiles are added:
-    ~/.bash_profile
-    ~/.bashrc
-    ~/.bash_aliases
-    ~/.vimrc
-    ~/.tmux.conf
-    ~/.gitconfig
+
+Aliases
+-------
+
+
+Programs
+--------
+
+
+Dotfiles
+--------
+
+``~/.bash_profile``
+``~/.bashrc``
+``~/.bash_aliases``
+``~/.vimrc``
+``~/.tmux.conf``
+``~/.gitconfig``
+
+
+Documents
+---------
