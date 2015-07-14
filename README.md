@@ -15,6 +15,7 @@ To-Do:
 - [ ] Get Atom text editor
 - [ ] Get Pandoc
 - [ ] Separate vim settings by file type
+- [ ] Get Zathura
 
 Things to install if not there already:
 	Chrome
@@ -32,6 +33,7 @@ Things to install if not there already:
     Atom editor
     lxml
     Pandoc
+    Zathura
 
 Documents I want downloaded:
 	Pro Git
@@ -45,10 +47,13 @@ Directories
 -----------
 
 ``~/Projects``
+``~/Projects/sandbox``
 
 
 Aliases
 -------
+
+``la``
 
 
 Programs
