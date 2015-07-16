@@ -1,45 +1,3 @@
-To-Do:
-======
-
-- [x] Create dot files for bash aliases
-- [x] Create file that will install programs
-- [ ] Create file that will download listed documents
-- [ ] Create setup files for Chrome, Git, Sublime, and Tmux
-- [ ] Create file to customize my command prompt.
-- [ ] Get virtualenv
-- [ ] Get django
-- [ ] Get MySQL
-- [ ] Get SQLite
-- [ ] Get pip
-- [ ] Get lxml
-- [ ] Get Atom text editor
-- [ ] Get Pandoc
-- [ ] Separate vim settings by file type
-- [ ] Get Zathura
-
-Things to install if not there already:
-	Chrome
-	Vim
-	Git
-	Tmux
-	Flake8
-	Pylint
-	Sublime
-	Vimux
-	Vundle (or some other manager)
-	adb
-	fastboot
-    tree
-    Atom editor
-    lxml
-    Pandoc
-    Zathura
-
-Documents I want downloaded:
-	Pro Git
-	Vim Book
-	1 or 2 Python Books
-
 Added/Changed
 =============
 
@@ -49,16 +7,39 @@ Directories
 ``~/Projects``
 ``~/Projects/sandbox``
 
+Virtual Environments
+--------------------
+
+``~/Projects/sandbox``
 
 Aliases
 -------
 
-``la``
-
+``ls = ls --color``
+``la = ls -A``
+``ll = ls -lA``
+``aliases = vim ~/.bash_aliases``
+``alias rm='rm -I --preserve-root -d -v'``
 
 Programs
 --------
 
+Chrome
+Vim
+Git
+Tmux
+Flake8
+Pylint
+Atom
+Vimux
+Vundle
+Adb
+Fastboot
+Tree
+Lxml
+Pandoc
+Virtualenv
+Virtualenv wrapper
 
 Dotfiles
 --------
@@ -70,6 +51,17 @@ Dotfiles
 ``~/.tmux.conf``
 ``~/.gitconfig``
 
-
 Documents
 ---------
+
+Advanced Linux Programming
+Dive Into Python
+Bash Manual
+Django Book
+Foundations of Computer Science
+The Linux Bible
+Pro Git
+Version Control With Subversion
+The Linux Command Line
+UNIX and Linux System Administration Handbook
+Vimbook
