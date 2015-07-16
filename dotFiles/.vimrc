@@ -13,20 +13,8 @@ set confirm
 " Set vim to use syntax highlighting as well as automatic indentation
 syntax on
 
-" Limit line length to 79 chars before inserting a newline char
-set textwidth=79
-
-" The following eliminate tabs altogether in favor of 4 spaces
-set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-
 " Make all indent commands ('>>' or '<<') a multiple of shiftwidth
 set shiftround
-
-" Indent next line to same indent as last line
-set autoindent
 
 " Sets the bottom right status line to show mode, position, and commands
 set laststatus=2
@@ -43,3 +31,14 @@ inoremap jj <Esc>
 
 " Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
 set loadplugins
+
+" Set Python defaults
+autocmd FileType python setlocal textwidth=79, expandtab, shiftwidth=4, tabstop=4, softtabstop=4, autoindent
+
+" Set HTML defaults
+autocmd FileType html setlocal expandtab, shiftwidth=4, tabstop=4, softtabstop=4, autoindent
+
+" Set XML defaults
+autocmd FileType xml setlocal expandtab, shiftwidth=2, tabstop=2, softtabstop=2, autoindent
+
+" Set Markdown/ReStructured Text defaults
