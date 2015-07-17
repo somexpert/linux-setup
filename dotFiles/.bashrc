@@ -1,6 +1,10 @@
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-    
-# Work-related
-export svnpath='svn+ssh://mgg0056@digitalprojects.library.unt.edu/var/lib/svn/trac'
+
+umask 0002
+
+# Ignore duplicates in command history and increase
+# history size to 1000 lines
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000    
