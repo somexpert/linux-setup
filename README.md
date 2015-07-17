@@ -40,6 +40,7 @@ Lxml
 Pandoc
 Virtualenv
 Virtualenv wrapper
+Docker
 
 Dotfiles
 --------
