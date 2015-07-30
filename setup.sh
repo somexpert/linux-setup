@@ -22,5 +22,6 @@ mkdir ~/Virtualenvs
 # Install desired programs, extensions, etc.
 echo "Installing programs."
 sudo apt-get install tree
-sudo apt-get install flake8
+echo "Installing python packages."
+sudo pip install flake8
 exit
