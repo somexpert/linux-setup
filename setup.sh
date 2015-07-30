@@ -12,6 +12,7 @@ cp dotFiles/.bash_aliases ~/.bash_aliases
 cp dotFiles/.vimrc ~/.vimrc
 cp dotFiles/.tmux.conf ~/.tmux.conf
 cp dotFiles/.gitconfig ~/.gitconfig
+source ~/.bash_profile
 
 # Setup desired directories
 echo "Creating directories."
