@@ -39,8 +39,9 @@ autocmd FileType python setlocal textwidth=79 expandtab shiftwidth=4 tabstop=4 s
 autocmd FileType html setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 
 " Set XML/XSD defaults
+autocmd BufNewFile,BufRead *.xsd set filetype=xml
 autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
-autocmd FileType xsd setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
 
 " Set Markdown/ReStructured Text defaults
-autocmd FileType md setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
