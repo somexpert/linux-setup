@@ -29,18 +29,15 @@ Vim
 Git
 Tmux
 Flake8
-Pylint
 Atom
-Vimux
-Vundle
-Adb
-Fastboot
 Tree
 Lxml
 Pandoc
 Virtualenv
 Virtualenv wrapper
 Docker
+xclip
+i3 (maybe)
 
 Dotfiles
 --------

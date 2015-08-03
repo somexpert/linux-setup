@@ -22,7 +22,20 @@ mkdir ~/Virtualenvs
 
 # Install desired programs, extensions, etc.
 echo "Installing programs."
+sudo apt-get update
+sudo apt-get install google-chrome
+sudo apt-get install vim
+sudo apt-get install git
+sudo apt-get install tmux
 sudo apt-get install tree
+sudo apt-get install lxml
+sudo apt-get install pandoc
+sudo apt-get install docker
+sudo apt-get install xclip
+
 echo "Installing python packages."
 sudo pip install flake8
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+
 exit
