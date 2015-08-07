@@ -4,16 +4,6 @@
 clear
 echo "Assuming control now."
 
-# Copy dotfiles to home directory.
-echo "Copying dotfiles to $USER's home directory."
-cp dotFiles/.bash_profile ~/.bash_profile
-cp dotFiles/.bashrc ~/.bashrc
-cp dotFiles/.bash_aliases ~/.bash_aliases
-cp dotFiles/.vimrc ~/.vimrc
-cp dotFiles/.tmux.conf ~/.tmux.conf
-cp dotFiles/.gitconfig ~/.gitconfig
-source ~/.bash_profile
-
 # Setup desired directories
 echo "Creating directories."
 mkdir ~/Projects
@@ -35,7 +25,18 @@ sudo apt-get install xclip
 
 echo "Installing python packages."
 sudo pip install flake8
+sudo pip install coverage
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
+
+# Copy dotfiles to home directory.
+echo "Copying dotfiles to $USER's home directory."
+cp dotFiles/.bash_profile ~/.bash_profile
+cp dotFiles/.bashrc ~/.bashrc
+cp dotFiles/.bash_aliases ~/.bash_aliases
+cp dotFiles/.vimrc ~/.vimrc
+cp dotFiles/.tmux.conf ~/.tmux.conf
+cp dotFiles/.gitconfig ~/.gitconfig
+source ~/.bash_profile
 
 exit

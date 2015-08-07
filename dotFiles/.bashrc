@@ -2,12 +2,16 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Set the default permissions for new files
 umask 0002
+
+# Initialize the virtualenvwrapper so it can be used immediately
+export WORKON_HOME=~/Virtualenvs ; source /usr/local/bin/virtualenvwrapper.sh
 
 # Ignore duplicates in command history and increase
 # history size to 1000 lines
 export HISTCONTROL=ignoredups
-export HISTSIZE=1000    
+export HISTSIZE=1000
 
 # Trying out a `mark` shell function that will behave
 # like vim marks, allowing for quick file navigation.

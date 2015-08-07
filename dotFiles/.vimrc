@@ -33,7 +33,7 @@ inoremap jj <Esc>
 set loadplugins
 
 " Set Python defaults
-autocmd FileType python setlocal textwidth=79 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+autocmd FileType python setlocal textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 
 " Set HTML defaults
 autocmd FileType html setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
