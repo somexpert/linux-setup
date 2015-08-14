@@ -1,5 +1,12 @@
 " Set up vim
 
+" Set up the vim-plug plugin manager
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
 " Set VI compatibility off. Allows full VIM feature set.
 set nocompatible
 
