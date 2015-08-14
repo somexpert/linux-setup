@@ -9,6 +9,7 @@ echo "Creating directories."
 mkdir ~/Projects
 mkdir ~/Projects/sandbox
 mkdir ~/Virtualenvs
+mkdir ~/.vim/autoload
 
 # Install desired programs, extensions, etc.
 echo "Installing programs."
@@ -22,6 +23,10 @@ sudo apt-get install lxml
 sudo apt-get install pandoc
 sudo apt-get install docker
 sudo apt-get install xclip
+sudo apt-get install i3
+sudo apt-get install rxvt-unicode-256color
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "Installing python packages."
 sudo pip install flake8
@@ -37,6 +42,9 @@ cp dotFiles/.bash_aliases ~/.bash_aliases
 cp dotFiles/.vimrc ~/.vimrc
 cp dotFiles/.tmux.conf ~/.tmux.conf
 cp dotFiles/.gitconfig ~/.gitconfig
+cp dotFiles/.i3config ~/.i3/config
+cp dotFiles/.Xresources ~/.Xresources
+
 source ~/.bash_profile
 
 exit

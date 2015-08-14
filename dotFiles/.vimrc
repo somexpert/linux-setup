@@ -3,6 +3,16 @@
 " Set VI compatibility off. Allows full VIM feature set.
 set nocompatible
 
+" Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
+set loadplugins
+
+" Set up the vim-plug plugin manager
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
 " Show relative line numbers and absolute line number for current line
 set relativenumber
 set number
@@ -29,9 +39,6 @@ set timeoutlen=1000
 " Sets certain remaps
 inoremap jj <Esc>
 
-" Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
-set loadplugins
-
 " Set Python defaults
 autocmd FileType python setlocal textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 
@@ -45,3 +52,6 @@ autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 sof
 " Set Markdown/ReStructured Text defaults
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+
+set t_Co=256
+colorscheme gruvbox
