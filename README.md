@@ -6,6 +6,7 @@ Directories
 
 ``~/Projects``
 ``~/Projects/sandbox``
+``~/.vim/autoload``
 
 Virtual Environments
 --------------------
@@ -38,6 +39,15 @@ Virtualenv wrapper
 Docker
 xclip
 i3 (maybe)
+vim-plug
+urxvt
+zathura
+
+Fonts
+-----
+
+Inconsolata
+Droid Sans Mono
 
 Dotfiles
 --------
@@ -48,6 +58,8 @@ Dotfiles
 ``~/.vimrc``
 ``~/.tmux.conf``
 ``~/.gitconfig``
+``~/.i3/config``
+``~/.Xresources``
 
 Documents
 ---------

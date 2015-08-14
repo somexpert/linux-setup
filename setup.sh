@@ -9,6 +9,7 @@ echo "Creating directories."
 mkdir ~/Projects
 mkdir ~/Projects/sandbox
 mkdir ~/Virtualenvs
+mkdir ~/.vim/autoload
 
 # Install desired programs, extensions, etc.
 echo "Installing programs."
@@ -37,6 +38,9 @@ cp dotFiles/.bash_aliases ~/.bash_aliases
 cp dotFiles/.vimrc ~/.vimrc
 cp dotFiles/.tmux.conf ~/.tmux.conf
 cp dotFiles/.gitconfig ~/.gitconfig
+cp dotFiles/.i3config ~/.i3/config
+cp dotFiles/.Xresources ~/.Xresources
+
 source ~/.bash_profile
 
 exit
