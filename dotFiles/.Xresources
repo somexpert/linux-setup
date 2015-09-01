@@ -261,7 +261,8 @@
 ! URxvt*cutchars:                       string
 ! URxvt*answerbackString:               string
 ! URxvt*secondaryScreen:                boolean
-! URxvt*secondaryScroll:                boolean ! URxvt*perl-lib:                       string
+! URxvt*secondaryScroll:                boolean 
+! URxvt*perl-lib:                       string
 ! URxvt*perl-eval:                      perl-eval
 ! URxvt*perl-ext-common:                string
 ! URxvt*perl-ext:                       string

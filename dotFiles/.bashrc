@@ -13,8 +13,7 @@ export WORKON_HOME=~/Virtualenvs ; source /usr/local/bin/virtualenvwrapper.sh
 export HISTCONTROL=ignoredups
 export HISTSIZE=1000
 
-# Trying out a `mark` shell function that will behave
-# like vim marks, allowing for quick file navigation.
+# Create commands mark, marks, and unmark that act like vim marks for directories
 export MARKPATH=$HOME/.marks
 function jump { 
     cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"

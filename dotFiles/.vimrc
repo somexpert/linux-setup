@@ -1,12 +1,5 @@
 " Set up vim
 
-" Set up the vim-plug plugin manager
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-
-call plug#end()
-
 " Set VI compatibility off. Allows full VIM feature set.
 set nocompatible
 
@@ -45,6 +38,14 @@ set timeoutlen=1000
 
 " Sets certain remaps
 inoremap jj <Esc>
+
+" Set default indentation
+set textwidth=120
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set autoindent
 
 " Set Python defaults
 autocmd FileType python setlocal textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
