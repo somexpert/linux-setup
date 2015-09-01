@@ -6,12 +6,12 @@ Directories
 
 * ``~/Projects``
 * ``~/Projects/sandbox``
-* ``~/.vim/autoload``
 
 Virtual Environments
 --------------------
 
 * ``~/Projects/sandbox``
+* ``~/Virtualenvs``
 
 Aliases
 -------
@@ -20,34 +20,39 @@ Aliases
 * ``la = ls -A``
 * ``ll = ls -lA``
 * ``aliases = vim ~/.bash_aliases``
-* ``alias rm='rm -I --preserve-root -d -v'``
+* ``rm = rm -I --preserve-root -d -v``
+* ``venv = virtualenvwrapper``
+* ``venvstart = export WORKON_HOME=~/Virtualenvs ; source /usr/local/bin/virtualenvwrapper.sh``
+* ``lsvenv = lsvirtualenv``
+* ``cdvenv = cdvirutalenv``
+* ``mkvenv = mkvirtualenv``
+* ``rmvenv = rmvirtualenv``
 
 Programs
 --------
 
-* Chrome
 * Vim
 * Git
 * Tmux
-* Flake8
-* Atom
 * Tree
-* Lxml
-* Pandoc
-* Virtualenv
-* Virtualenv wrapper
 * Docker
 * xclip
 * i3
-* vim-plug
 * urxvt
+* Pandoc
+* Flake8
+* Virtualenv
+* Virtualenv wrapper
+* vim-plug
 * zathura
+* Atom
+* Chrome
 
 Fonts
 -----
 
 * Inconsolata
-* Droid Sans Mono
+* Droid
 
 Dotfiles
 --------
