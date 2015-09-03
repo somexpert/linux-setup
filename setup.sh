@@ -26,6 +26,7 @@ sudo pip install flake8
 sudo pip install coverage
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
+sudo pip install ipython
 
 # Setup desired directories
 echo "Creating directories."

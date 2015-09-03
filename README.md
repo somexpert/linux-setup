@@ -38,6 +38,7 @@ Programs
 * Docker
 * xclip
 * i3
+* ipython
 * urxvt
 * Pandoc
 * Flake8
