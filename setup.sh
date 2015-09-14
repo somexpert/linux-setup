@@ -28,13 +28,14 @@ sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 sudo pip install ipython
 
-# Setup desired directories
+# Set up desired directories.
 echo "Creating directories."
 mkdir ~/Projects
 mkdir -p ~/Projects/sandbox
 mkdir ~/Virtualenvs
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.i3/config
+mkdir -p ~/config/dunst
 
 # Copy dotfiles to home directory.
 echo "Copying dotfiles to $USER's home directory."
@@ -46,12 +47,15 @@ cp dotFiles/.tmux.conf ~/.tmux.conf
 cp dotFiles/.gitconfig ~/.gitconfig
 cp dotFiles/.i3config ~/.i3/config
 cp dotFiles/.Xresources ~/.Xresources
+cp dotFiles/dunstrc ~/.config/dunst/dunstrc
 
 source ~/.bash_profile
 
-# Set up the sandbox virtual environment
+# Set up the sandbox virtual environment.
 echo "Setting up the sandbox."
 mkvenv sandbox
 deactivate
+
+# Restart services that may have been modified.
 
 exit

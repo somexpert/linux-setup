@@ -66,6 +66,7 @@ Dotfiles
 * ``~/.gitconfig``
 * ``~/.i3/config``
 * ``~/.Xresources``
+* ``~/.config/dunst/dunstrc``
 
 Documents (coming soon)
 -----------------------
