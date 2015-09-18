@@ -36,17 +36,18 @@ mkdir ~/Virtualenvs
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.i3/config
 mkdir -p ~/config/dunst
+mkdir ~/Documents/Books
 
 # Copy dotfiles to home directory.
 echo "Copying dotfiles to $USER's home directory."
-cp dotFiles/.bash_profile ~/.bash_profile
-cp dotFiles/.bashrc ~/.bashrc
-cp dotFiles/.bash_aliases ~/.bash_aliases
-cp dotFiles/.vimrc ~/.vimrc
-cp dotFiles/.tmux.conf ~/.tmux.conf
-cp dotFiles/.gitconfig ~/.gitconfig
-cp dotFiles/.i3config ~/.i3/config
-cp dotFiles/.Xresources ~/.Xresources
+cp dotFiles/bash_profile ~/.bash_profile
+cp dotFiles/bashrc ~/.bashrc
+cp dotFiles/bash_aliases ~/.bash_aliases
+cp dotFiles/vimrc ~/.vimrc
+cp dotFiles/tmux.conf ~/.tmux.conf
+cp dotFiles/gitconfig ~/.gitconfig
+cp dotFiles/i3config ~/.i3/config
+cp dotFiles/Xresources ~/.Xresources
 cp dotFiles/dunstrc ~/.config/dunst/dunstrc
 
 source ~/.bash_profile

@@ -6,6 +6,7 @@ Directories
 
 * ``~/Projects``
 * ``~/Projects/sandbox``
+* ``~/Documents/Books``
 
 Virtual Environments
 --------------------
@@ -67,18 +68,3 @@ Dotfiles
 * ``~/.i3/config``
 * ``~/.Xresources``
 * ``~/.config/dunst/dunstrc``
-
-Documents (coming soon)
------------------------
-
-* Advanced Linux Programming
-* Dive Into Python
-* Bash Manual
-* Django Book
-* Foundations of Computer Science
-* The Linux Bible
-* Pro Git
-* Version Control With Subversion
-* The Linux Command Line
-* UNIX and Linux System Administration Handbook
-* Vimbook
