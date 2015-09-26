@@ -35,7 +35,7 @@ mkdir -p ~/Projects/sandbox
 mkdir ~/Virtualenvs
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.i3/config
-mkdir -p ~/config/dunst
+mkdir -p ~/.config/dunst
 mkdir ~/Documents/Books
 
 # Copy dotfiles to home directory.
