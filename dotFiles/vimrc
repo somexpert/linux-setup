@@ -10,6 +10,8 @@ set loadplugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'damonkelley/vim-python-syntax'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
