@@ -11,22 +11,25 @@ sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install tmux
 sudo apt-get install tree
-sudo apt-get install pandoc
 sudo apt-get install docker
 sudo apt-get install xclip
 sudo apt-get install i3
 sudo apt-get install rxvt-unicode-256color
-sudo apt-get install fonts-inconsolata
-sudo apt-get install fonts-droid
+sudo apt-get install pandoc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo apt-get install zathura
+sudo apt-get install htop
+sudo apt-get install ranger
+sudo apt-get install fonts-inconsolata
+sudo apt-get install fonts-droid
 
 echo "Installing python packages."
+sudo pip install ipython
 sudo pip install flake8
-sudo pip install coverage
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
-sudo pip install ipython
+sudo pip install coverage
 
 # Set up desired directories.
 echo "Creating directories."

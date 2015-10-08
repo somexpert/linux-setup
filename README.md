@@ -1,3 +1,10 @@
+To-Do
+=====
+
+[] Atom
+[] Chrome
+
+
 Added/Changed
 =============
 
@@ -47,8 +54,9 @@ Programs
 * Virtualenv wrapper
 * vim-plug
 * zathura
-* Atom
-* Chrome
+* htop
+* ranger
+* coverage
 
 Fonts
 -----
