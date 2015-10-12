@@ -23,6 +23,8 @@ sudo apt-get install htop
 sudo apt-get install ranger
 sudo apt-get install fonts-inconsolata
 sudo apt-get install fonts-droid
+sudo apt-get install ack-grep
+sudo apt-get install silversearcher-ag
 
 echo "Installing python packages."
 sudo pip install ipython

@@ -1,8 +1,8 @@
 To-Do
 =====
 
-[] Atom
-[] Chrome
+- [] Atom
+- [] Chrome
 
 
 Added/Changed
@@ -57,6 +57,8 @@ Programs
 * htop
 * ranger
 * coverage
+* ack-grep
+* ag
 
 Fonts
 -----
