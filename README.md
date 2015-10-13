@@ -1,8 +1,10 @@
 To-Do
 =====
 
-- [] Atom
-- [] Chrome
+- [ ] Atom
+- [ ] Chrome
+- [ ] Make symlinks to dotfiles instead of copying them
+- [ ] Make options for limiting scope of setup script
 
 
 Added/Changed
