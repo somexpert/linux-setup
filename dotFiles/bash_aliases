@@ -2,7 +2,7 @@
 
 alias aliases='vim ~/.bash_aliases'
 alias ls='ls --color'
-alias la='ls -A'
+alias la='ls -Al'
 alias ll='ls -l'
 alias rm='rm -I --preserve-root -d -v'
 alias venv='virtualenvwrapper'
