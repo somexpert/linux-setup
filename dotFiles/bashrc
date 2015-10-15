@@ -1,12 +1,19 @@
+# Source bash_aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+# Source local-only bashrc_local
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
 fi
 
 # Set the default permissions for new files
 umask 0002
 
 # Initialize the virtualenvwrapper so it can be used immediately
-export WORKON_HOME=~/Virtualenvs ; source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/Virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Ignore duplicates in command history and increase
 # history size to 1000 lines

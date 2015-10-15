@@ -56,6 +56,10 @@ cp dotFiles/i3config ~/.i3/config
 cp dotFiles/Xresources ~/.Xresources
 cp dotFiles/dunstrc ~/.config/dunst/dunstrc
 
+# Create local-only bashrc_local file.
+touch ~/.bashrc_local
+
+# Source all bash files.
 source ~/.bash_profile
 
 # Set up the sandbox virtual environment.

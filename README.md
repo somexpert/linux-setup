@@ -77,6 +77,7 @@ Dotfiles
 
 * ``~/.bash_profile``
 * ``~/.bashrc``
+* ``~/.bashrc_local`` (empty, for local config only)
 * ``~/.bash_aliases``
 * ``~/.vimrc``
 * ``~/.tmux.conf``
