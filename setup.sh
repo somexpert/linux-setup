@@ -12,7 +12,7 @@ sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install tmux
 sudo apt-get install tree
-sudo apt-get install docker
+sudo apt-get install docker-engine
 sudo apt-get install docker-compose
 sudo apt-get install xclip
 sudo apt-get install i3
