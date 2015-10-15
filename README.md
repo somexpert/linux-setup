@@ -52,6 +52,7 @@ Programs
 * tmux
 * tree
 * docker
+* docker-compose
 * xclip
 * i3
 * ipython
