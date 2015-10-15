@@ -7,6 +7,7 @@ echo "Assuming control now."
 # Install desired programs, extensions, etc.
 echo "Installing programs."
 sudo apt-get update
+sudo apt-get install curl
 sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install tmux

@@ -44,19 +44,20 @@ Aliases
 Programs
 --------
 
-* Vim
-* Git
-* Tmux
-* Tree
-* Docker
+* curl
+* vim
+* git
+* tmux
+* tree
+* docker
 * xclip
 * i3
 * ipython
 * urxvt
-* Pandoc
-* Flake8
-* Virtualenv
-* Virtualenv wrapper
+* pandoc
+* flake8
+* virtualenv
+* virtualenv wrapper
 * vim-plug
 * zathura
 * htop
