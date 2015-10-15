@@ -27,6 +27,7 @@ sudo apt-get install fonts-inconsolata
 sudo apt-get install fonts-droid
 sudo apt-get install ack-grep
 sudo apt-get install silversearcher-ag
+sudo apt-get install python-pip
 
 echo "Installing python packages."
 sudo pip install ipython

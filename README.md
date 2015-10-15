@@ -68,6 +68,7 @@ Programs
 * coverage
 * ack-grep
 * ag
+* python-pip
 
 Fonts
 -----
