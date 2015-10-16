@@ -7,33 +7,33 @@ echo "Assuming control now."
 # Install desired programs, extensions, etc.
 echo "Installing programs."
 sudo apt-get update
-sudo apt-get install curl
-sudo apt-get install vim
-sudo apt-get install git
-sudo apt-get install tmux
-sudo apt-get install tree
-sudo apt-get install docker-engine
-sudo apt-get install docker-compose
-sudo apt-get install xclip
-sudo apt-get install i3
-sudo apt-get install rxvt-unicode-256color
-sudo apt-get install pandoc
+sudo apt-get install -qq curl
+sudo apt-get install -qq vim
+sudo apt-get install -qq git
+sudo apt-get install -qq tmux
+sudo apt-get install -qq tree
+sudo apt-get install -qq docker-engine
+sudo apt-get install -qq docker-compose
+sudo apt-get install -qq xclip
+sudo apt-get install -qq i3
+sudo apt-get install -qq rxvt-unicode-256color
+sudo apt-get install -qq pandoc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-sudo apt-get install zathura
-sudo apt-get install htop
-sudo apt-get install ranger
-sudo apt-get install fonts-inconsolata
-sudo apt-get install fonts-droid
-sudo apt-get install ack-grep
-sudo apt-get install silversearcher-ag
+sudo apt-get install -qq zathura
+sudo apt-get install -qq htop
+sudo apt-get install -qq ranger
+sudo apt-get install -qq fonts-inconsolata
+sudo apt-get install -qq fonts-droid
+sudo apt-get install -qq ack-grep
+sudo apt-get install -qq silversearcher-ag
 
 echo "Installing python packages."
-sudo pip install ipython
-sudo pip install flake8
-sudo pip install virtualenv
-sudo pip install virtualenvwrapper
-sudo pip install coverage
+sudo pip -q install ipython
+sudo pip -q install flake8
+sudo pip -q install virtualenv
+sudo pip -q install virtualenvwrapper
+sudo pip -q install coverage
 
 # Set up desired directories.
 echo "Creating directories."

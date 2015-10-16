@@ -6,7 +6,7 @@ To-Do for 1.0.0 release
 - [ ] Make symlinks to dotfiles instead of copying them
 - [x] Figure out a system for having a file or multiple files for local-only configs (aliases, vars, etc)
 - [ ] Make options for limiting scope of setup script
-- [ ] Install pip
+- [x] Install pip
 - [ ] Correct i3 installation
 
 
@@ -68,6 +68,7 @@ Programs
 * coverage
 * ack-grep
 * ag
+* pip
 
 Fonts
 -----
