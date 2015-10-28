@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'damonkelley/vim-python-syntax'
 Plug 'kshenoy/vim-signature'
+Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
@@ -42,6 +43,7 @@ set timeoutlen=1000
 inoremap jj <Esc>
 
 " Set default indentation
+set cc=80
 set textwidth=120
 set expandtab
 set shiftwidth=4
