@@ -11,8 +11,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'damonkelley/vim-python-syntax'
-Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-commentary'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
