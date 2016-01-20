@@ -59,6 +59,10 @@ ln -sf $(pwd)/dotFiles/i3config ~/.i3/config
 ln -sf $(pwd)/dotFiles/Xresources ~/.Xresources
 ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
 
+# Set up NeoVim.
+ln -s ~/.vim ~/.config/nvim
+ln -sf $(pwd)/dotFiles/vimrc ~/.config/nvim/init.vim
+
 # Create local-only bashrc_local file.
 touch ~/.bashrc_local
 
