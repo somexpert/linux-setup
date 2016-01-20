@@ -8,6 +8,7 @@ To-Do for 1.0.0 release
 - [ ] Make options for limiting scope of setup script
 - [x] Install pip
 - [ ] Correct i3 installation
+- [ ] Make debian version of script/s
 
 
 Added/Changed
@@ -47,6 +48,7 @@ Programs
 --------
 
 * curl
+* nvim (neovim)
 * vim
 * git
 * tmux
