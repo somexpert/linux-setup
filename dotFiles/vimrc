@@ -68,3 +68,4 @@ autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=
 
 set t_Co=256
 colorscheme gruvbox
+set background=dark
