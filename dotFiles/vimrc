@@ -19,6 +19,9 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
+" Set plugin settings
+set statusline+=%{fugitive#statusline()}
+
 " Show relative line numbers and absolute line number for current line
 set relativenumber
 set number
