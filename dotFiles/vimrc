@@ -20,9 +20,6 @@ Plug 'benmills/vimux'
 
 call plug#end()
 
-" Set plugin settings
-set statusline+=%{fugitive#statusline()}
-
 " Show relative line numbers and absolute line number for current line
 set relativenumber
 set number
@@ -71,6 +68,16 @@ autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 sof
 " Set Markdown/ReStructured Text defaults
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+
+" Set status line
+" file name
+set statusline=%f
+set statusline+=\ -\ 
+set statusline+=%{fugitive#statusline()}   " fugitive addition (shows git branch)
+set statusline+=%=  " align following to right
+set statusline+=%l                      " show current line number
+set statusline+=/                       " separator
+set statusline+=%L                      " show total line number
 
 set t_Co=256
 colorscheme gruvbox
