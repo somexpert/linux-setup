@@ -51,6 +51,9 @@ set timeoutlen=1000
 " Sets certain remaps
 inoremap jj <Esc>
 
+" Sets the leader key to space
+let mapleader = "\<Space>"
+
 " Set default indentation
 set cc=80
 set textwidth=120
