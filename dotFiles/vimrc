@@ -77,16 +77,8 @@ autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 sof
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 
-" Set status line
-set statusline=%f                           " File name
-set statusline+=\ -\                        " Separator
-set statusline+=%{fugitive#statusline()}    " Fugitive addition (shows git branch)
-set statusline+=%=                          " Align following to right
-set statusline+=col:\ %c                    " Show column number
-set statusline+=\ \|\                        " Separator
-set statusline+=%l                          " Show current line number
-set statusline+=/                           " Separator
-set statusline+=%L                          " Show total line number
+" Set status line with fugitive git branch indicator
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 set t_Co=256
 colorscheme gruvbox
