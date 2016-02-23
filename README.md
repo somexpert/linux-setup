@@ -3,12 +3,14 @@ To-Do for 1.0.0 release
 
 - [ ] Atom
 - [ ] Chrome
-- [ ] Make symlinks to dotfiles instead of copying them
+- [x] Make symlinks to dotfiles instead of copying them
 - [x] Figure out a system for having a file or multiple files for local-only configs (aliases, vars, etc)
 - [ ] Make options for limiting scope of setup script
 - [x] Install pip
 - [ ] Correct i3 installation
 - [ ] Make debian version of script/s
+- [ ] Make zshell default shell
+- [ ] Install fuzzy finder
 
 
 Added/Changed
