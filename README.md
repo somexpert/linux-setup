@@ -11,7 +11,7 @@ To-Do for 1.0.0 release
 - [ ] Make debian version of script/s
 - [x] Make zshell default shell
 - [ ] Install fuzzy finder
-- [ ] Install autocomplete plugin for nvim
+- [x] Install autocomplete plugin for nvim
 
 
 Added/Changed
