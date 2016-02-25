@@ -29,6 +29,7 @@ sudo apt-get install -qq fonts-droid
 sudo apt-get install -qq ack-grep
 sudo apt-get install -qq silversearcher-ag
 sudo apt-get install -qq python-pip
+sudo apt-get install -qq zsh
 
 echo "Installing python packages."
 sudo pip -q install docker-compose
@@ -47,8 +48,8 @@ mkdir -p ~/.i3/config
 mkdir -p ~/.config/dunst
 mkdir ~/Documents/Books
 
-# Copy dotfiles to home directory.
-echo "Copying dotfiles to $USER's home directory."
+# Link to dotfiles.
+echo "Linking from $USER's home directory to dotfiles."
 ln -sf $(pwd)/dotFiles/bash_profile ~/.bash_profile
 ln -sf $(pwd)/dotFiles/bashrc ~/.bashrc
 ln -sf $(pwd)/dotFiles/bash_aliases ~/.bash_aliases
@@ -58,6 +59,7 @@ ln -sf $(pwd)/dotFiles/gitconfig ~/.gitconfig
 ln -sf $(pwd)/dotFiles/i3config ~/.i3/config
 ln -sf $(pwd)/dotFiles/Xresources ~/.Xresources
 ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
+ln -sf $(pwd)/dotFiles/zshrc ~/.zshrc
 
 # Set up NeoVim.
 ln -s ~/.vim ~/.config/nvim

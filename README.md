@@ -9,8 +9,9 @@ To-Do for 1.0.0 release
 - [x] Install pip
 - [ ] Correct i3 installation
 - [ ] Make debian version of script/s
-- [ ] Make zshell default shell
+- [x] Make zshell default shell
 - [ ] Install fuzzy finder
+- [ ] Install autocomplete plugin for nvim
 
 
 Added/Changed

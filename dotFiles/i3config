@@ -41,7 +41,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/urxvt
+bindsym $mod+Return exec /usr/bin/urxvt -e /bin/zsh
 
 # kill focused window
 bindsym $mod+Shift+q kill

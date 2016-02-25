@@ -1,3 +1,17 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=10000
+setopt appendhistory autocd notify
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/UNT/mgg0056/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
 # Source bash_aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -14,11 +28,6 @@ umask 0002
 # Initialize the virtualenvwrapper so it can be used immediately
 export WORKON_HOME=~/Virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
-
-# Ignore duplicates in command history and increase
-# history size to 1000 lines
-export HISTCONTROL=ignoredups
-export HISTSIZE=1000
 
 # Set the terminal colors for urxvt-256color (change if terminal is different)
 export TERM=rxvt-256color
@@ -38,4 +47,4 @@ function marks {
     ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
