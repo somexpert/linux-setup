@@ -14,7 +14,6 @@ sudo apt-get install -qq neovim
 sudo apt-get install -qq git
 sudo apt-get install -qq tmux
 sudo apt-get install -qq tree
-sudo apt-get install -qq docker-engine
 sudo apt-get install -qq xclip
 sudo apt-get install -qq i3
 sudo apt-get install -qq rxvt-unicode-256color
