@@ -19,8 +19,12 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'benmills/vimux'
 Plug 'Shougo/deoplete.nvim'
+Plug 'junegunn/vim-peekaboo'
 
 call plug#end()
+
+" Set deoplete to auto start for auto-completion
+let g:deoplete#enable_at_startup = 1
 
 " Show crosshair highlighting (line row and column)
 set cursorline
