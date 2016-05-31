@@ -1,10 +1,6 @@
-" Set up vim
-
-" Set VI compatibility off. Allows full VIM feature set.
-set nocompatible
-
-" Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
-set loadplugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""PLUG-INS""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set up the vim-plug plugin manager
 call plug#begin('~/.vim/plugged')
@@ -17,14 +13,30 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
-Plug 'benmills/vimux'
 Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/vim-peekaboo'
+Plug 'takac/vim-hardtime'
+Plug 'unblevable/quick-scope'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
 " Set deoplete to auto start for auto-completion
 let g:deoplete#enable_at_startup = 1
+let g:hardtime_timeout = 1000
+let g:hardtime_allow_different_key = 1
+let g:hardtime_maxcount = 3
+let g:hardtime_default_on = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""GENERAL SETTINGS"""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set VI compatibility off. Allows full VIM feature set.
+set nocompatible
+
+" Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
+set loadplugins
 
 " Show crosshair highlighting (line row and column)
 set cursorline
@@ -33,6 +45,9 @@ set cursorcolumn
 " Show relative line numbers and absolute line number for current line
 set relativenumber
 set number
+
+" Allow switching buffers if there are unsaved changes in the current one
+set hidden
 
 " Show prompt to save if you try exiting a modified buffer before saving
 set confirm
@@ -49,18 +64,12 @@ set ruler
 set showmode
 set showcmd
 
-" Sets the timout len for key combos such as remaps and key combos
+" Sets the timout len (ms) for key combos such as remaps and key combos
 set timeout
-set timeoutlen=1000
-
-" Sets certain remaps
-inoremap jj <Esc>
-
-" Sets the leader key to space
-let mapleader = "\<Space>"
+set timeoutlen=300
 
 " Set default indentation
-set cc=80
+set colorcolumn=80
 set textwidth=120
 set expandtab
 set shiftwidth=4
@@ -68,19 +77,9 @@ set tabstop=4
 set softtabstop=4
 set autoindent
 
-" Set Python defaults
-autocmd FileType python setlocal textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
-
-" Set HTML defaults
-autocmd FileType html setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
-
-" Set XML/XSD defaults
-autocmd BufNewFile,BufRead *.xsd set filetype=xml
-autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
-
-" Set Markdown/ReStructured Text defaults
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+" Set search to be case insensitive UNLESS the search term has capitalization
+set ignorecase
+set smartcase
 
 " Set status line with fugitive git branch indicator
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -88,3 +87,84 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set t_Co=256
 colorscheme gruvbox
 set background=dark
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""AUTOCOMMANDS"""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set Python autocommands
+augroup python
+    autocmd!
+    autocmd FileType python setlocal textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+augroup END
+
+" Set HTML defaults
+augroup html
+    autocmd!
+    autocmd FileType html setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+augroup END
+
+" Set XML/XSD defaults
+augroup xml-xsd
+    autocmd!
+    autocmd BufNewFile,BufRead *.xsd set filetype=xml
+    autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+augroup END
+
+" Set Markdown/ReStructured Text defaults
+augroup md-rst
+    autocmd!
+    autocmd BufNewFile,BufRead *.md set filetype=markdown
+    autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+augroup END
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""KEY BINDINGS"""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Sets certain remaps
+inoremap jk <esc>
+inoremap <esc> <nop>
+
+" Sets the leader key to space
+let mapleader = "\<Space>"
+
+"Sets <leader>[hjkl] to jump to the split in the direction specified
+nnoremap <leader>h <c-w>h
+nnoremap <c-w>h <nop>
+nnoremap <leader>j <c-w>j
+nnoremap <c-w>j <nop>
+nnoremap <leader>k <c-w>k
+nnoremap <c-w>k <nop>
+nnoremap <leader>l <c-w>l
+nnoremap <c-w>l <nop>
+
+" Sets <leader>ev to edit your VIMRC file
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" Sets <leader>sv to source your VIMRC file
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Set quick motions for altering interiors of parenths, brackets, and curly braces
+onoremap ( i(
+onoremap [ i[
+onoremap { i{
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""ABBREVIATIONS""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Correct some common misspellings
+iabbrev adn and
+iabbrev coutn count
+iabbrev improt import
+iabbrev calss class
+
+" Add some quick inserts
+iabbrev git_me https://github.com/somexpert
+iabbrev git_mark https://github.com/vphill
+iabbrev git_lauren https://github.com/ldko
+iabbrev git_damon https://github.com/damonkelley
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""TESTING"""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
