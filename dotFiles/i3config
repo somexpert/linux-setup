@@ -11,23 +11,9 @@
 
 set $mod Mod1
 
-# Set up dual monitors
-
-exec xrandr --output DVI-1 --right-of DVI-0
-workspace 1 output DVI-0
-workspace 2 output DVI-1
-
 # Lock computer with Control-Alt-l
 
 bindsym Control+Mod1+l exec --no-startup-id i3lock --color=000000
-
-# Set up workspace 1 as browser + email
-
-workspace_layout tabbed
-exec_always --no-startup-id i3-msg 'workspace 1; exec google-chrome; exec evolution'
-assign [class="Google-chrome"] 1
-
-exec_always --no-startup-id i3-msg 'workspace 2; exec /usr/bin/zsh'
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -42,7 +28,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/urxvt -e /bin/zsh
+bindsym $mod+Return exec /usr/bin/urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
