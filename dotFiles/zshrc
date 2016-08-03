@@ -12,6 +12,7 @@ zstyle :compinstall filename '/home/UNT/mgg0056/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
 # Source bash_aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -31,6 +32,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # Set the terminal colors for urxvt-256color (change if terminal is different)
 export TERM=rxvt-256color
+
+# Set up the prompt helpers in zsh
+autoload -Uz promptinit
+promptinit
 
 # Create commands mark, marks, and unmark that act like vim marks for directories
 export MARKPATH=$HOME/.marks

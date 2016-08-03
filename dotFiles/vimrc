@@ -64,12 +64,7 @@ set timeout
 set timeoutlen=300
 
 " Set default indentation
-set colorcolumn=80
-set textwidth=120
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
 set autoindent
 
 " Set search to be case insensitive UNLESS the search term has capitalization
@@ -90,7 +85,7 @@ set background=dark
 " Set Python autocommands
 augroup python
     autocmd!
-    autocmd FileType python setlocal textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+    autocmd FileType python setlocal colorcolumn=80 textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 augroup END
 
 " Set HTML defaults
@@ -104,6 +99,13 @@ augroup xml-xsd
     autocmd!
     autocmd BufNewFile,BufRead *.xsd set filetype=xml
     autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+augroup END
+
+" Set Markdown/ReStructured Text defaults
+augroup md-rst
+    autocmd!
+    autocmd BufNewFile,BufRead *.md set filetype=markdown
+    autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 augroup END
 
 " Set Markdown/ReStructured Text defaults
@@ -159,6 +161,11 @@ iabbrev git_me https://github.com/somexpert
 iabbrev git_mark https://github.com/vphill
 iabbrev git_lauren https://github.com/ldko
 iabbrev git_damon https://github.com/damonkelley
+iabbrev git_jasone https://github.com/jason-ellis
+iabbrev git_jasont https://github.com/jthomale
+iabbrev git_will https://github.com/whicks1
+iabbrev git_joey https://github.com/yeahdef
+iabbrev git_kurt https://github.com/kurtnordstrom
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""TESTING"""""""""""""""""""""""""""""""""""""""
