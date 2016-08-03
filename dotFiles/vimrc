@@ -15,7 +15,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/vim-peekaboo'
-Plug 'takac/vim-hardtime'
 Plug 'unblevable/quick-scope'
 Plug 'justinmk/vim-sneak'
 
@@ -23,10 +22,6 @@ call plug#end()
 
 " Set deoplete to auto start for auto-completion
 let g:deoplete#enable_at_startup = 1
-let g:hardtime_timeout = 1000
-let g:hardtime_allow_different_key = 1
-let g:hardtime_maxcount = 3
-let g:hardtime_default_on = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""GENERAL SETTINGS"""""""""""""""""""""""""""""""""""

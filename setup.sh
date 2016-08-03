@@ -24,11 +24,11 @@ sudo apt-get install -qq zathura
 sudo apt-get install -qq htop
 sudo apt-get install -qq ranger
 sudo apt-get install -qq fonts-inconsolata
-sudo apt-get install -qq fonts-droid
 sudo apt-get install -qq ack-grep
 sudo apt-get install -qq silversearcher-ag
 sudo apt-get install -qq python-pip
 sudo apt-get install -qq zsh
+sudo apt-get install -qq libssl-dev
 
 echo "Installing python packages."
 sudo pip -q install docker-compose
@@ -37,6 +37,7 @@ sudo pip -q install flake8
 sudo pip -q install virtualenv
 sudo pip -q install virtualenvwrapper
 sudo pip -q install coverage
+sudo pip -q install ansible
 
 # Set up desired directories.
 echo "Creating directories."
@@ -69,11 +70,6 @@ touch ~/.bashrc_local
 
 # Source all bash files.
 source ~/.bash_profile
-
-# Set up the sandbox virtual environment.
-echo "Setting up the sandbox."
-mkvenv sandbox
-deactivate
 
 # Restart services that may have been modified.
 
