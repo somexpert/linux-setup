@@ -29,6 +29,10 @@ sudo apt-get install -qq silversearcher-ag
 sudo apt-get install -qq python-pip
 sudo apt-get install -qq zsh
 sudo apt-get install -qq libssl-dev
+sudo apt-get install -qq sshpass
+# Install fuzzy finder
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 echo "Installing python packages."
 sudo pip -q install docker-compose
