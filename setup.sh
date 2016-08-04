@@ -44,7 +44,7 @@ echo "Creating directories."
 mkdir -p ~/Projects/sandbox
 mkdir ~/Virtualenvs
 mkdir -p ~/.vim/autoload
-mkdir -p ~/.i3/config
+mkdir -p ~/.config/i3
 mkdir -p ~/.config/dunst
 mkdir ~/Documents/Books
 
@@ -56,7 +56,7 @@ ln -sf $(pwd)/dotFiles/bash_aliases ~/.bash_aliases
 ln -sf $(pwd)/dotFiles/vimrc ~/.vimrc
 ln -sf $(pwd)/dotFiles/tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/dotFiles/gitconfig ~/.gitconfig
-ln -sf $(pwd)/dotFiles/i3config ~/.i3/config
+ln -sf $(pwd)/dotFiles/i3config ~/.config/i3/config
 ln -sf $(pwd)/dotFiles/Xresources ~/.Xresources
 ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
 ln -sf $(pwd)/dotFiles/zshrc ~/.zshrc
