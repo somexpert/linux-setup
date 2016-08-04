@@ -2,16 +2,10 @@ To-Do for 1.0.0 release
 =======================
 
 - [ ] Atom
-- [ ] Chrome
-- [x] Make symlinks to dotfiles instead of copying them
-- [x] Figure out a system for having a file or multiple files for local-only configs (aliases, vars, etc)
+- [ ] Chrome or chromium
 - [ ] Make options for limiting scope of setup script
-- [x] Install pip
-- [ ] Correct i3 installation
 - [ ] Make debian version of script/s
-- [x] Make zshell default shell
-- [ ] Install fuzzy finder
-- [x] Install autocomplete plugin for nvim
+- [ ] Update README to be current with installation script
 
 
 Added/Changed
@@ -72,12 +66,15 @@ Programs
 * ack-grep
 * ag
 * pip
+* fzf
+* zsh
+* ansible
+* sshpass
 
 Fonts
 -----
 
 * Inconsolata
-* Droid
 
 Dotfiles
 --------
@@ -89,6 +86,6 @@ Dotfiles
 * ``~/.vimrc``
 * ``~/.tmux.conf``
 * ``~/.gitconfig``
-* ``~/.i3/config``
+* ``~/.config/i3/config``
 * ``~/.Xresources``
 * ``~/.config/dunst/dunstrc``
