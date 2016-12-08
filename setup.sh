@@ -42,6 +42,8 @@ sudo pip -q install virtualenv
 sudo pip -q install virtualenvwrapper
 sudo pip -q install coverage
 sudo pip -q install ansible
+# Need this so deoplete works
+sudo pip3 -q install neovim
 
 # Set up desired directories.
 echo "Creating directories."
