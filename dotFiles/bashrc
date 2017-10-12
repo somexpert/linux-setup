@@ -23,6 +23,9 @@ export HISTSIZE=1000
 # Set the terminal colors for urxvt-256color (change if terminal is different)
 export TERM=rxvt-256color
 
+# Set the editor environment variable
+export EDITOR=nvim
+
 # Create commands mark, marks, and unmark that act like vim marks for directories
 export MARKPATH=$HOME/.marks
 function jump { 

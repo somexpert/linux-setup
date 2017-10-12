@@ -17,6 +17,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'unblevable/quick-scope'
 Plug 'justinmk/vim-sneak'
+Plug 'nvie/vim-flake8'
 
 call plug#end()
 

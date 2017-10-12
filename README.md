@@ -4,7 +4,6 @@ To-Do for 1.0.0 release
 - [ ] Atom
 - [ ] Chrome or chromium
 - [ ] Make options for limiting scope of setup script
-- [ ] Make debian version of script/s
 - [ ] Update README to be current with installation script
 
 

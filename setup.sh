@@ -6,7 +6,7 @@ echo "Assuming control now."
 
 # Install desired programs, extensions, etc.
 echo "Installing programs."
-sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install -qq curl
 sudo apt-get install -qq vim
