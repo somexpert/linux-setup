@@ -13,16 +13,33 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
-Plug 'Shougo/deoplete.nvim'
 Plug 'junegunn/vim-peekaboo'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf'}
+Plug 'junegunn/fzf.vim'
 Plug 'unblevable/quick-scope'
 Plug 'justinmk/vim-sneak'
 Plug 'nvie/vim-flake8'
+Plug 'vim-syntastic/syntastic'
+
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'zchee/deoplete-jedi'
+    Plug 'wokalski/autocomplete-flow'
+endif
 
 call plug#end()
 
 " Set deoplete to auto start for auto-completion
-let g:deoplete#enable_at_startup = 1
+if has('nvim')
+    let g:deoplete#enable_at_startup = 1
+endif
+
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""GENERAL SETTINGS"""""""""""""""""""""""""""""""""""
@@ -74,6 +91,9 @@ set smartcase
 
 " Set status line with fugitive git branch indicator
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 set t_Co=256
 colorscheme gruvbox
@@ -92,7 +112,7 @@ augroup END
 " Set HTML defaults
 augroup html
     autocmd!
-    autocmd FileType html setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+    autocmd FileType html,FileType htmldjango setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
 augroup END
 
 " Set XML/XSD defaults
@@ -100,13 +120,6 @@ augroup xml-xsd
     autocmd!
     autocmd BufNewFile,BufRead *.xsd set filetype=xml
     autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
-augroup END
-
-" Set Markdown/ReStructured Text defaults
-augroup md-rst
-    autocmd!
-    autocmd BufNewFile,BufRead *.md set filetype=markdown
-    autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 augroup END
 
 " Set Markdown/ReStructured Text defaults

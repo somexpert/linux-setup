@@ -16,9 +16,9 @@ export WORKON_HOME=~/Virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Ignore duplicates in command history and increase
-# history size to 1000 lines
+# history size to 10000 lines
 export HISTCONTROL=ignoredups
-export HISTSIZE=1000
+export HISTSIZE=10000
 
 # Set the terminal colors for urxvt-256color (change if terminal is different)
 export TERM=rxvt-256color

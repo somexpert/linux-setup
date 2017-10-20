@@ -2,4 +2,4 @@
 	name = Gio Gottardi
 	email = somexpert@gmail.com
 [core]
-	editor = vim
+	editor = nvim
