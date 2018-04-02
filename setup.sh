@@ -35,7 +35,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 echo "Installing python packages."
-sudo pip -q install docker-compose
 sudo pip -q install ipython
 sudo pip -q install flake8
 sudo pip -q install virtualenv
