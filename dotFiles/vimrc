@@ -39,7 +39,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""GENERAL SETTINGS"""""""""""""""""""""""""""""""""""
@@ -106,13 +105,16 @@ set background=dark
 " Set Python autocommands
 augroup python
     autocmd!
-    autocmd FileType python setlocal colorcolumn=80 textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+    " The code below would eliminate spaces right before an endline character
+    " with each save.
+    " autocmd BufWritePre * %s/\s\+$//e
+    autocmd FileType python setlocal colorcolumn=80,99 textwidth=99 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 augroup END
 
 " Set HTML defaults
 augroup html
     autocmd!
-    autocmd FileType html,FileType htmldjango setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+    autocmd FileType html,htmldjango setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
 augroup END
 
 " Set XML/XSD defaults
@@ -155,6 +157,11 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " Sets <leader>sv to source your VIMRC file
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Sets <esc> to exit terminal mode in neovim
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
+endif
 
 " Set quick motions for altering interiors of parenths, brackets, and curly braces
 onoremap ( i(
