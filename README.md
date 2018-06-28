@@ -1,14 +1,17 @@
 To-Do for 1.0.0 release
 =======================
 
-- [ ] Atom
-- [ ] Chrome or chromium
 - [ ] Make options for limiting scope of setup script
 - [ ] Update README to be current with installation script
 
 
 Added/Changed
 =============
+
+Configurations
+--------------
+
+* Bash history is customized to save more, ignore duplicates and uninformative commands, and keep timestamps.
 
 Directories
 -----------
