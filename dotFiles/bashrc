@@ -32,6 +32,9 @@ export TERM=rxvt-256color
 # Set the editor environment variable
 export EDITOR=nvim
 
+# Enable the globstar recursive match feature of the shell
+shopt -s globstar
+
 # Create commands mark, marks, and unmark that act like vim marks for directories
 export MARKPATH=$HOME/.marks
 function jump { 
