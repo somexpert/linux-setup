@@ -24,7 +24,7 @@ export HISTFILESIZE=10000
 # Don't save ls, bg, fg, history, and clear commands in the history
 export HISTCONTROL='ls:bg:fg:history:clear'
 # Add timestamps to the history
-export HISTTIMEFORMAT='%y-%m-%d %T'
+export HISTTIMEFORMAT='%y-%m-%d %T '
 
 # Set the terminal colors for rxvt (change if terminal is different)
 export TERM=rxvt
