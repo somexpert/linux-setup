@@ -76,6 +76,9 @@ set ruler
 set showmode
 set showcmd
 
+" Sets the update time option to be much faster
+set updatetime=100
+
 " Sets the timout len (ms) for key combos such as remaps and key combos
 set timeout
 set timeoutlen=300

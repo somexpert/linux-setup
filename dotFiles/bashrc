@@ -13,21 +13,21 @@ umask 0002
 
 # Initialize virtualenvwrapper
 export WORKON_HOME=~/Virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 # Ignore duplicates and lines that start with space in command history
 export HISTCONTROL=ignoreboth
 # Increase history size to 10,000 lines
-export HISTSIZE=10000
+export HISTSIZE=5000
 export HISTFILESIZE=10000
 # Don't save ls, bg, fg, history, and clear commands in the history
 export HISTCONTROL='ls:bg:fg:history:clear'
 # Add timestamps to the history
 export HISTTIMEFORMAT='%y-%m-%d %T'
 
-# Set the terminal colors for urxvt-256color (change if terminal is different)
-export TERM=rxvt-256color
+# Set the terminal colors for rxvt (change if terminal is different)
+export TERM=rxvt
 
 # Set the editor environment variable
 export EDITOR=nvim
