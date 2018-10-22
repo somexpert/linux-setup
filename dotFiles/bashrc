@@ -29,6 +29,9 @@ export HISTTIMEFORMAT='%y-%m-%d %T '
 # Set the terminal colors for rxvt (change if terminal is different)
 export TERM=rxvt
 
+# Set the non-standard variable TERMINAL for things like i3 to know which terminal to use
+export TERMINAL=rxvt
+
 # Set the editor environment variable
 export EDITOR=nvim
 
