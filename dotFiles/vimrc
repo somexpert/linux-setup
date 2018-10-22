@@ -134,6 +134,12 @@ augroup md-rst
     autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 augroup END
 
+" Immediately enter insert mode when entering a terminal buffer
+augroup terminals
+    autocmd!
+    autocmd TermOpen * startinsert
+augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""KEY BINDINGS"""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
