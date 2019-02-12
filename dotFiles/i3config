@@ -27,6 +27,9 @@ floating_modifier $mod
 # make sure you help out the selection by specifying your terminal of choice in TERMINAL
 bindsym $mod+Return exec i3-sensible-terminal
 
+# Take a quick screenshot of the currently focused window and copy it to clipboard
+bindsym $mod+o exec gnome-screenshot -wc
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
