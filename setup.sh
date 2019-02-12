@@ -9,7 +9,6 @@ echo "Installing programs."
 sudo apt-get update
 sudo apt-get install -qq curl
 sudo apt-get install -qq neovim
-sudo apt-get install -qq git
 sudo apt-get install -qq tmux
 sudo apt-get install -qq tree
 sudo apt-get install -qq xclip
@@ -29,15 +28,12 @@ sudo apt-get install -qq libssl-dev
 sudo apt-get install -qq sshpass
 sudo apt-get install -qq virtualenv
 sudo apt-get install -qq virtualenvwrapper
-sudo apt-get install -qq ansible
 
 # Install fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 echo "Installing python packages."
-pip -q install flake8
-pip -q install coverage
 # Need this so deoplete works
 pip3 -q install neovim
 
@@ -60,6 +56,7 @@ ln -sf $(pwd)/dotFiles/gitconfig ~/.gitconfig
 ln -sf $(pwd)/dotFiles/i3config ~/.config/i3/config
 ln -sf $(pwd)/dotFiles/Xresources ~/.Xresources
 ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
+ln -sf $(pwd)/dotFiles/rangerconfig ~/.config/ranger/rc.conf
 
 # Set up NeoVim.
 ln -s ~/.vim ~/.config/nvim
