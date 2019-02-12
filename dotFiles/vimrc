@@ -50,6 +50,8 @@ set nocompatible
 " Sets VIM to load plugins from .vim/plug-ins and .vimrc on startup
 set loadplugins
 
+filetype plugin on
+
 " Show crosshair highlighting (line row and column)
 set cursorline
 set cursorcolumn
@@ -135,10 +137,12 @@ augroup md-rst
 augroup END
 
 " Immediately enter insert mode when entering a terminal buffer
-augroup terminals
-    autocmd!
-    autocmd TermOpen * startinsert
-augroup END
+if has('nvim')
+    augroup terminals
+        autocmd!
+        autocmd TermOpen * startinsert
+    augroup END
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""KEY BINDINGS"""""""""""""""""""""""""""""""""""""
