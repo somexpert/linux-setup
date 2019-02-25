@@ -57,6 +57,7 @@ ln -sf $(pwd)/dotFiles/i3config ~/.config/i3/config
 ln -sf $(pwd)/dotFiles/Xresources ~/.Xresources
 ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
 ln -sf $(pwd)/dotFiles/rangerconfig ~/.config/ranger/rc.conf
+ln -sf $(pwd)/dotFiles/htoprc ~/.config/htop/htoprc
 
 # Set up NeoVim.
 ln -s ~/.vim ~/.config/nvim

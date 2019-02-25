@@ -91,3 +91,4 @@ Dotfiles
 * ``~/.config/i3/config``
 * ``~/.Xresources``
 * ``~/.config/dunst/dunstrc``
+* ``~/.config/htop/htoprc``
