@@ -1,17 +1,8 @@
-To-Do for 1.0.0 release
+To-Do
 =======================
 
 - [ ] Make options for limiting scope of setup script
-- [ ] Update README to be current with installation script
-
-
-Added/Changed
-=============
-
-Configurations
---------------
-
-* Bash history is customized to save more, ignore duplicates and uninformative commands, and keep timestamps.
+- [ ] Install i3blocks from github, along with some blocks
 
 Directories
 -----------
@@ -29,10 +20,10 @@ Virtual Environments
 Aliases
 -------
 
+* ``aliases = vim ~/.bash_aliases ; source ~/.bash_aliases``
 * ``ls = ls --color``
-* ``la = ls -A``
-* ``ll = ls -lA``
-* ``aliases = vim ~/.bash_aliases``
+* ``la = ls -Al``
+* ``ll = ls -l``
 * ``rm = rm -I --preserve-root -d -v``
 * ``venv = virtualenvwrapper``
 * ``venvstart = export WORKON_HOME=~/Virtualenvs ; source /usr/local/bin/virtualenvwrapper.sh``
@@ -40,38 +31,38 @@ Aliases
 * ``cdvenv = cdvirutalenv``
 * ``mkvenv = mkvirtualenv``
 * ``rmvenv = rmvirtualenv``
+* ``ack = ack-grep``
 * ``dc = docker-compose``
 * ``dcr = docker-compose run --rm``
+* ``dcr = docker-compose run --rm``
+* ``ppath = export PYTHONPATH=$(pwd)``
+* ``grep = 'grep -I --color``
+* ``volume = alsamixer``
+* ``screenshot = gnome-screenshot -w -d 5``
 
 Programs
 --------
 
 * curl
 * nvim (neovim)
-* vim
-* git
 * tmux
 * tree
 * xclip
 * i3
-* ipython
-* urxvt
+* rxvt
 * pandoc
-* flake8
 * virtualenv
 * virtualenv wrapper
 * vim-plug
 * zathura
 * htop
 * ranger
-* coverage
-* ack-grep
 * ag
 * pip
+* pip3
 * fzf
-* zsh
-* ansible
 * sshpass
+* feh
 
 Fonts
 -----
@@ -86,10 +77,11 @@ Dotfiles
 * ``~/.bashrc_local`` (empty, for local config only)
 * ``~/.bash_aliases``
 * ``~/.vimrc``
-* ``~/.tmux.conf``
 * ``~/.gitconfig``
 * ``~/.config/i3/config``
 * ``~/.Xresources``
 * ``~/.config/dunst/dunstrc``
 * ``~/.config/ranger/rc.conf``
 * ``~/.config/htop/htoprc``
+* ``~/.config/flake8``
+* ``~/.config/i3blocks/config``

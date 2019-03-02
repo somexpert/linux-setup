@@ -28,6 +28,7 @@ sudo apt-get install -qq libssl-dev
 sudo apt-get install -qq sshpass
 sudo apt-get install -qq virtualenv
 sudo apt-get install -qq virtualenvwrapper
+sudo apt-get install -qq feh
 
 # Install fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -58,6 +59,8 @@ ln -sf $(pwd)/dotFiles/Xresources ~/.Xresources
 ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
 ln -sf $(pwd)/dotFiles/rangerconfig ~/.config/ranger/rc.conf
 ln -sf $(pwd)/dotFiles/htoprc ~/.config/htop/htoprc
+ln -sf $(pwd)/dotFiles/flake8 ~/.config/flake8
+ln -sf $(pwd)dotFiles/i3blocksconfig ~/.config/i3blocks/config
 
 # Set up NeoVim.
 ln -s ~/.vim ~/.config/nvim
