@@ -2,8 +2,8 @@
 
 alias aliases='vim ~/.bash_aliases ; source ~/.bash_aliases'
 alias ls='ls --color'
-alias la='ls -Al'
-alias ll='ls -l'
+alias la='ls -Alh'
+alias ll='ls -lh'
 alias rm='rm -I --preserve-root -d -v'
 alias venv='virtualenvwrapper'
 alias venvstart='export WORKON_HOME=~/Virtualenvs ; source /usr/local/bin/virtualenvwrapper.sh'
