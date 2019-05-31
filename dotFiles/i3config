@@ -147,10 +147,6 @@ bindsym $mod+r mode "resize"
 # Status bar setup.
 bar {
         status_command i3blocks
-        mode hide
-        hidden_state hide
-        modifier Mod4
-        tray_output primary
 }
 
 # Keep whatever background was manually set with feh
