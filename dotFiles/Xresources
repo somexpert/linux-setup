@@ -47,5 +47,3 @@ rxvt*italicFont:                     xft:Inconsolata:size=12:italic:antialias=tr
 rxvt*letterSpace:                    0
 rxvt*secondaryScreen:                true
 rxvt*secondaryScroll:                false
-rxvt*transparent: true
-rxvt*shading: 30
