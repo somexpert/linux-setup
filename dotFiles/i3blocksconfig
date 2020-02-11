@@ -56,8 +56,9 @@ interval=30
 # (defaults to 10 for 10%).
 [disk]
 label=HOME
-#instance=/mnt/data
-interval=30
+instance=/
+interval=60
+separator=false
 
 # Network interface monitoring
 #
@@ -67,7 +68,6 @@ interval=30
 #instance=wlan0
 color=#00FF00
 interval=10
-separator=false
 
 [wifi]
 #instance=wlp3s0

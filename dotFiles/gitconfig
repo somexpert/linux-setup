@@ -3,3 +3,4 @@
 	email = somexpert@gmail.com
 [core]
 	editor = nvim
+        autocrlf = input

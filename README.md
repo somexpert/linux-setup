@@ -1,9 +1,3 @@
-To-Do
-=======================
-
-- [ ] Make options for limiting scope of setup script
-- [ ] Install i3blocks from github, along with some blocks
-
 Directories
 -----------
 

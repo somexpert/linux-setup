@@ -21,7 +21,6 @@ sudo apt-get install -qq zathura
 sudo apt-get install -qq htop
 sudo apt-get install -qq ranger
 sudo apt-get install -qq fonts-inconsolata
-sudo apt-get install -qq silversearcher-ag
 sudo apt-get install -qq python-pip
 sudo apt-get install -qq python3-pip
 sudo apt-get install -qq libssl-dev
@@ -30,6 +29,7 @@ sudo apt-get install -qq virtualenv
 sudo apt-get install -qq virtualenvwrapper
 sudo apt-get install -qq w3m
 sudo apt-get install -qq feh
+sudo apt-get install -qq i3blocks
 
 # Install fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -38,6 +38,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 echo "Installing python packages."
 # Need this so deoplete works
 pip3 -q install neovim
+pip3 -q install flake8
 
 # Set up desired directories.
 echo "Creating directories."
@@ -45,7 +46,9 @@ mkdir -p ~/Projects/sandbox
 mkdir ~/Virtualenvs
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.config/i3
+mkdir -p ~/.config/i3blocks
 mkdir -p ~/.config/dunst
+mkdir -p ~/.config/ranger
 mkdir ~/Documents/Books
 
 # Link to dotfiles.
