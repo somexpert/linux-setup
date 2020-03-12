@@ -55,10 +55,15 @@ interval=30
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=HOME
+label=SSD
 instance=/
 interval=60
 separator=false
+
+[disk]
+label=TURTLE
+instance=/media/Tera
+interval=120
 
 # Network interface monitoring
 #
@@ -90,11 +95,11 @@ min_width=CPU: 100.00%
 # Battery indicator
 #
 # The battery instance defaults to 0.
-[battery]
-label=BAT
+# [battery]
+# label=BAT
 #label=⚡
 #instance=1
-interval=30
+# interval=30
 
 # Date Time
 #
