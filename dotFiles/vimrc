@@ -93,7 +93,6 @@ set timeout
 set timeoutlen=300
 
 " Set default indentation
-set expandtab
 set autoindent
 
 " Set search to be case insensitive UNLESS the search term has capitalization
@@ -129,21 +128,21 @@ augroup END
 " Set HTML defaults
 augroup html
     autocmd!
-    autocmd FileType html,htmldjango setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+    autocmd FileType html,htmldjango setlocal textwidth=120 shiftwidth=2 tabstop=2 softtabstop=2 autoindent
 augroup END
 
 " Set XML/XSD defaults
 augroup xml-xsd
     autocmd!
     autocmd BufNewFile,BufRead *.xsd set filetype=xml
-    autocmd FileType xml setlocal textwidth=120 expandtab shiftwidth=2 tabstop=2 softtabstop=2 autoindent
+    autocmd FileType xml setlocal textwidth=120 shiftwidth=2 tabstop=2 softtabstop=2 autoindent
 augroup END
 
 " Set Markdown/ReStructured Text defaults
 augroup md-rst
     autocmd!
     autocmd BufNewFile,BufRead *.md set filetype=markdown
-    autocmd FileType markdown setlocal textwidth=120 expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent
+    autocmd FileType markdown setlocal textwidth=120 shiftwidth=4 tabstop=4 softtabstop=4 autoindent
 augroup END
 
 " Immediately enter insert mode when entering a terminal buffer
