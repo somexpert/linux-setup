@@ -27,10 +27,10 @@ export HISTCONTROL='ls:bg:fg:history:clear'
 export HISTTIMEFORMAT='%y-%m-%d %T '
 
 # Set the terminal colors for rxvt (change if terminal is different)
-export TERM=rxvt
+export TERM=rxvt-unicode
 
 # Set the non-standard variable TERMINAL for things like i3 to know which terminal to use
-export TERMINAL=rxvt
+export TERMINAL=rxvt-unicode
 
 # Set the editor environment variable
 export EDITOR=nvim

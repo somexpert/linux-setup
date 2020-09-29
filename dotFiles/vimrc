@@ -48,7 +48,7 @@ let g:syntastic_python_checkers = ["flake8"]
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set the Python intepreter locations (so neovim works fine within virtualenvs
-let g:python_host_prog = "/usr/bin/python2"
+let g:python_host_prog = "/usr/bin/python2.7"
 let g:python3_host_prog = "/usr/bin/python3"
 
 " Set VI compatibility off. Allows full VIM feature set.
