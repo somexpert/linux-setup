@@ -64,7 +64,7 @@ ln -sf $(pwd)/dotFiles/dunstrc ~/.config/dunst/dunstrc
 ln -sf $(pwd)/dotFiles/rangerconfig ~/.config/ranger/rc.conf
 ln -sf $(pwd)/dotFiles/htoprc ~/.config/htop/htoprc
 ln -sf $(pwd)/dotFiles/flake8 ~/.config/flake8
-ln -sf $(pwd)/dotFiles/i3blocksconfig ~/.config/i3blocks/config
+ln -sf $(pwd)/dotFiles/tmux ~/.tmux.conf
 
 # Set up NeoVim.
 ln -s ~/.vim ~/.config/nvim
